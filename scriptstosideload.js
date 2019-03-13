@@ -1,4 +1,5 @@
 
+
 $(function () {
     $('#tile_form').on('submit', function (e) {
         e.preventDefault();
@@ -34,40 +35,9 @@ $.ajax({
     });
 
 
-// $.ajax({
-//     type: "GET",
-//     url: "https://api.github.com/repos/dburczyn/cdn/contents/js" ,
-//      success: function (response) {
-//         $.each(response, function (i, f) {
-//             console.log(f.content);
-//             var qq= atob(f.content);
-
-
-//             var tile = '<div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">' +  + '</div><div class="flip-card-back"><p>' + qq + '</p></div></div></div>'
-//             $(tile).appendTo("#viewPanelTile");
-//         });
-
-//     },
-
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
     });
 });
+
