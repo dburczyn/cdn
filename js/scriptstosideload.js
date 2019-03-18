@@ -24,3 +24,21 @@ jQuery_1_12_4.ajax({
     });
     });
 });
+
+jQuery_1_12_4(function () {
+jQuery_1_12_4('#file_input_form').on('submit',function (e) {
+  e.preventDefault();
+
+
+
+  jQuery_1_12_4.ajax({
+  url: 'https://api.github.com/repos/dburczyn/cdn/contents/js/'+ jQuery_1_12_4('#filename').val()+'?access_token=12efd2766ae2a12e9e00900dff5fe98d17f82636',
+  type: 'PUT',
+  //data: JSON.stringify(jQuery_1_12_4('#filecontent').val()),
+   data: '{"message": "closed","content":"'+ btoa(jQuery_1_12_4('#filecontent').val())+'" }',
+  success: function(data) {
+    alert('Load was performed.' + JSON.stringify(data));
+  }
+});
+});
+});
