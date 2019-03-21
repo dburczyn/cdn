@@ -1,1 +1,0 @@
-{"testowyjson":"i jego value"}
