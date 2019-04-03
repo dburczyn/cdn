@@ -1,4 +1,3 @@
-authorizationtoken="d249bac5841a392c9340152f62a42d635d2cd6f9";
 repourl = "https://api.github.com/repositories/175385549/contents/js";
 
 templatejson = {
